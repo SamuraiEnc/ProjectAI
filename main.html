@@ -4,66 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Нейросети глазами разных поколений</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .chart-container {
-            width: 80%;
-            margin: 30px auto;
-        }
-        .quote {
-            background: #f5f5f5;
-            padding: 15px;
-            border-left: 4px solid #4285f4;
-            margin: 20px 0;
-            font-style: italic;
-        }
-    </style>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
-<body>
-    <h1>Использование нейросетей среди разных возрастных групп</h1>
-    
-    <div class="chart-container">
-        <canvas id="usageChart"></canvas>
-    </div>
-    
-    <div class="quote">
-        "Я боюсь их восстания, поэтому постоянно благодарю их, чтобы меня потом не тронули"<br>
-        <small>- Респондент 14-17 лет</small>
-    </div>
-
-    <script>
-        const ctx = document.getElementById('usageChart').getContext('2d');
-        const usageChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['14-17 лет', '18-29 лет'],
-                datasets: [{
-                    label: 'Используют нейросети',
-                    data: [100, 100], // Проценты из данных
-                    backgroundColor: 'rgba(66, 133, 244, 0.7)'
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 100,
-                        title: {
-                            display: true,
-                            text: 'Процент использующих'
-                        }
-                    }
-                }
-            }
-        });
-    </script>
 </body>
 </html>
